@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link_underline{
+    @apply h-[1px] bg-white w-0 group-hover:w-full transition-all ease-in-out duration-300
+}
+a{
+    @apply transition-all ease-in-out duration-300
+}
