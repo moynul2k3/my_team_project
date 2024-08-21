@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./output/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+        html,
+        body {
+        position: relative;
+        height: 100%;
+        }
+
+        body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        }
+
+        .swiper {
+        width: 100%;
+        height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-emerald-500">
+    <header class="flex justify-between items-center w-full max-md:h-12 md:h-16 lg:h-20 bg-emerald-950/30 backdrop-blur-lg max-md:px-2 md:px-10 lg:px-20 fixed top-0 z-50">
+        <div class="h-full flex justify-center items-center">
+            <img src="./src/assets/logo/main_logo.png" alt="" class="h-[70%]">
+        </div>
+        <div class="flex justify-center items-center gap-5 text-white">
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Home</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Portfolio</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Contact</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Services</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">About us</a>
+                <p class="link_underline"></p>
+            </div>
+        </div>
+        <div class="max-md:h-8 md:h-12 lg:h-10 max-md:w-8 md:w-12 lg:w-10 flex justify-center items-center rounded-full bg-white">
+            <i class='bx bx-user text-xl'></i>
+        </div>
+    </header>
+
+
+    <section class="h-[600px] w-full mt-20 bg-fixed flex justify-center items-center " style="background-image: url('./src/assets/image/image1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="h-full w-full bg-black/40 flex justify-center items-center">
+            <p class="text-6xl text-white font-bold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corrupti.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="h-[600px] w-full flex flex-col justify-center items-center gap-20 mt-40">
+        <div class="swiper mySwiper w-full h-[500px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-fixed" style="background-image: url('./src/assets/image/image1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="text-6xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laboriosam eaque? Reprehenderit corporis velit similique reiciendis obcaecati, hic officia quisquam nostrum doloremque maiores maxime cum natus expedita consequatur vero! Eligendi.</p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('./src/assets/image/image1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background-image: url('./src/assets/image/image1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background-image: url('./src/assets/image/image1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background-image: url('./src/assets/image/image1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="h-auto w-full max-md:px-2 md:px-10 lg:px-20 flex flex-col justify-center items-center gap-20 my-40">
+        <p class="text-4xl text-white py-2 px-20 border-b-2 border-white">Contact with us</p>
+
+        <form action="https://formspree.io/f/meojrawa" method="POST" class="w-full h-auto bg-white/60 backdrop-blur-2xl rounded-md shadow-md shadow-emerald-950 p-10 mb-40">
+            <div class="flex justify-center ">
+                <p class="text-4xl font-thin text-center text-emerald-700 w-3/5 border-b-2 border-emerald-700 py-2 ">Contact us Form</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-x-20 gap-y-5 pt-10">
+                <div class="flex flex-col ">
+                    <label for="first_name" class="text-lg font-thin text-emerald-700">First Name</label>
+                    <input type="text" name="first_name" id="first_name" class="bg-transparent border-b-2 border-black/30 h-10 text-emerald-600 focus:outline-none focus:border-black/50 placeholder:text-black/20" placeholder="Enter your first name">
+                </div>
+                <div class="flex flex-col ">
+                    <label for="email" class="text-lg font-thin text-emerald-700">E-mail</label>
+                    <input type="email" name="email" id="email" class="bg-transparent border-b-2 border-black/30 h-10 text-emerald-600 focus:outline-none focus:border-black/50 placeholder:text-black/20" placeholder="Enter your email">
+                </div>
+                <div class="flex flex-col ">
+                    <label for="subject" class="text-lg font-thin text-emerald-700">Subject</label>
+                    <input type="text" name="subject" id="subject" class="bg-transparent border-b-2 border-black/30 h-10 text-emerald-600 focus:outline-none focus:border-black/50 placeholder:text-black/20" placeholder="Enter subject">
+                </div>
+
+                <textarea name="message" id="body" rows="10" class="col-span-2 bg-transparent border-[2px] border-black/30 focus:border-black/50 p-5" placeholder="Write your message..."></textarea>
+
+                <div class="w-full flex justify-center col-span-2">
+                    <button type="submit" class="w-2/5 h-10 rounded-md hover:bg-emerald-600 focus:bg-emerald-600 bg-emerald-500 text-white text-xl">Send</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        autoplay: {
+            duration: '500',
+        },
+        });
+    </script>
+</body>
+</html>
